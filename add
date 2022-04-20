@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+
+class student {
+    public:
+    int rollno;
+    int m1,m2,m3;    
+    int cal_total();
+    void read_marks();     
+
+};
+void student::read_marks(){
+    
+    cout<<"enter marks1 ";
+    cin>>m1;
+    cout<<"enter marks2 ";
+    cin>>m2;
+    cout<<"enter marks3 ";
+    cin>>m3;
+
+    return;
+}
+
+int student::cal_total(){
+    return (m1+m2+m3);
+}
+
+int main(){
+    student s1;
+    s1.read_marks();
+
+    
+    cout<<s1.cal_total();
+    return 0;
+
+}
